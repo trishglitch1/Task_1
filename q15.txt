@@ -1,0 +1,12 @@
+import numpy as np
+
+a = np.array( [[45, 60], [30, 80]] )
+
+a[a > 50] = 100
+mean = np.mean(a, axis=0)
+
+print("new array:")
+print(a)
+
+print("\nmean of each column:")
+print(mean)
